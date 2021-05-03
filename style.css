@@ -1,0 +1,72 @@
+body {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  height: 100vh;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+body div {
+  font-size: 66px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+form#smileys input[type="submit"] {
+	 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 333px;
+  height: 333px;
+  border: none;
+  font-size: 3em;
+  color: transparent;
+  cursor: pointer;
+  -webkit-transition: border .2s ease;
+  transition: border .2s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  margin: 0 5px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+form#smileys input[type="submit"]:hover, form#smileys input[type="submit"]:checked {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+form#smileys input[type="submit"]:focus {
+  outline: 0;
+}
+form#smileys input[type="submit"].happy {
+  background: url("./img/happy_ampvnc.svg") center;
+  background-size: cover;
+}
+form#smileys input[type="submit"].neutral {
+  background: url("./img/neutral_t3q8hz.svg") center;
+  background-size: cover;
+}
+form#smileys input[type="submit"].sad {
+  background: url("./img/sad_bj1tuj.svg") center;
+  background-size: cover;
+}
+
+.mtt {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  color: #999;
+  text-decoration: none;
+}
+.mtt span {
+  color: #e74c3c;
+}
+.mtt:hover {
+  color: #666;
+}
+.mtt:hover span {
+  color: #c0392b;
+}
